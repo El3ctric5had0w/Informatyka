@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
-
 int main(){
 
+int liczba[5];
 cout << "Wprowadz 5 liczb: ";
-cout << endl;
+for(int i=0; i < 5; i++){
+	cin >> liczba[i];
+}
 
-int liczby[5];
-	for(int i=1; i < 4; i++){
-		cin >> liczby[i];
-	}
-	
+for(int i=0; i < 5; i++){
+	if (i > 3) 
+	cout << liczba[i] << ",";
+}
 
-	
-	return 0;
+    return 0;
 }
