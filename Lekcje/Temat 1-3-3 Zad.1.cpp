@@ -14,7 +14,7 @@ int main()
 }
 
 void Przywitanie(string imie, string nazwisko){
-cout << "Witam, " << imie << " " << nazwisko << endl;
+cout << "Witaj, " << imie << " " << nazwisko << endl;
 }
 
 
