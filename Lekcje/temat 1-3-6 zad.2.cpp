@@ -12,13 +12,16 @@ struct Ksiegarnia
 };
 
 //funkcje
-void rok_wydania (short *rok_wyd){
+void rok_wydania (int *rok_wyd){
 	
 }
 void cena_ksiazki (float *cena_ksi){
 	
 }
 void wydawnictwo_ksiazki (string *wydawnictwo_ksi){
+	
+}
+void wyjscie_0 (int *wyjs){
 	
 }
 
@@ -89,19 +92,33 @@ int main()
 		"29.54",
 	};
 	
+	int kategoria;
+	
 	cout <<"Witaj w ksiegarni" << endl;
 	cout << "Po jakiej kategorii chcial bys wyszukac ksiazke:" << endl;
 	cout << "1. Rok wydania" << endl;
 	cout << "2. Cena" << endl;
 	cout << "3. Wydawnictwo" << endl;
 	cout << "0. Wyjescie" << endl;
-	cin >> wybor;
+	cin >> kategoria;
 	
-	if (wybor == 1);
+	switch( kategoria ){
 	
+	case 0:{
+		cout <<"Witaj w ksiegarni" << endl;
+		cout << "Po jakiej kategorii chcial bys wyszukac ksiazke:" << endl;
+		cout << "1. Rok wydania" << endl;
+		cout << "2. Cena" << endl;
+		cout << "3. Wydawnictwo" << endl;
+		cout << "0. Wyjescie" << endl;
+		cin >> kategoria;
+	break;	
+	}
 	
-		
+	case 1:
+		int rok;
+		cout << "Podaj od jakiego roku chcesz zobaczyc ksiazki: ";
+		cin >> rok;
+	}
 	
-    cin.get();
-    return( 0 );
 }
