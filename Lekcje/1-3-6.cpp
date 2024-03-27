@@ -5,7 +5,7 @@ using namespace std;
 struct Ksiegarnia
 {
 	//opis struktury
-	string tutul;
+	string tytul;
 	string autor;
 	string rok;
 	string wydawnictwo;
@@ -13,15 +13,15 @@ struct Ksiegarnia
 };
 
 //funkcje
-void funkcja1(short *rok){
-	
+void funkcja1(short *frok){
+
 }
 
 
 int main(){
 	
-	//dane ksiegarni
-	Ksiegarnia Tytul1 =
+//dane ksiegarni
+static Ksiegarnia Tytul1 =
 	{
 		"Tytul1",
 		"autor1",
@@ -97,11 +97,16 @@ int main(){
 	//kategorie
 	switch(wybor){
 		case 1:
-			short rok;
-			int *wsk;
 			int podaj_rok;
 			cout << "Podaj od jakiego roku chcesz zobaczyc ksiazki: ";
 			cin >> podaj_rok;
+			//przekazanie do funcji
+			short frok = podaj_rok;
+			short *wsk = &frok;
+			funkcja1(wsk);
+			//wynik dzialania funcji
+			cout << "Znalezione ksiazki: " << endl;
+			cout << 
 			break;
 	}
 }

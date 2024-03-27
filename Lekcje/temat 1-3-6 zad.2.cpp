@@ -12,21 +12,12 @@ struct Ksiegarnia
 };
 
 //funkcje
-void rok_wydania (int *rok_wyd){
-	
-}
-void cena_ksiazki (float *cena_ksi){
-	
-}
-void wydawnictwo_ksiazki (string *wydawnictwo_ksi){
-	
-}
-void wyjscie_0 (int *wyjs){
-	
+void rok_wydania(int a){
+	cout << "a";
 }
 
-int main()
-{
+
+int main(){
     //dane ksiegarni
 	Ksiegarnia Tytul1 =
     {
@@ -92,33 +83,15 @@ int main()
 		"29.54",
 	};
 	
-	int kategoria;
+	int a;
+	int *wsk = &a;
 	
-	cout <<"Witaj w ksiegarni" << endl;
 	cout << "Po jakiej kategorii chcial bys wyszukac ksiazke:" << endl;
 	cout << "1. Rok wydania" << endl;
 	cout << "2. Cena" << endl;
 	cout << "3. Wydawnictwo" << endl;
 	cout << "0. Wyjescie" << endl;
-	cin >> kategoria;
 	
-	switch( kategoria ){
-	
-	case 0:{
-		cout <<"Witaj w ksiegarni" << endl;
-		cout << "Po jakiej kategorii chcial bys wyszukac ksiazke:" << endl;
-		cout << "1. Rok wydania" << endl;
-		cout << "2. Cena" << endl;
-		cout << "3. Wydawnictwo" << endl;
-		cout << "0. Wyjescie" << endl;
-		cin >> kategoria;
-	break;	
-	}
-	
-	case 1:
-		int rok;
-		cout << "Podaj od jakiego roku chcesz zobaczyc ksiazki: ";
-		cin >> rok;
-	}
-	
+rok_wydania(wsk);
+
 }

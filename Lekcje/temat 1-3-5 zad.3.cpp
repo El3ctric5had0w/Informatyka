@@ -7,7 +7,7 @@ void zwieksz_liczbe (float *liczba){
 
 int main()
 {
-		;
+	float numer;
 	float *wsk = &numer;
 	
 	cout << "wartosci zmiennych" << endl;
