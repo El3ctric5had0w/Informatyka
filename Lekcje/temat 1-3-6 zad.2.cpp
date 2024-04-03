@@ -12,8 +12,11 @@ struct Ksiegarnia
 };
 
 //funkcje
-void rok_wydania(int a){
-	cout << "a";
+void funkcja1(int *rok){  //rok wydania
+	for( int *rok = 0; *rok < 7; *rok++ ) {
+		
+       
+    }
 }
 
 
@@ -83,15 +86,25 @@ int main(){
 		"29.54",
 	};
 	
-	int a;
-	int *wsk = &a;
-	
+	int kategoria;
 	cout << "Po jakiej kategorii chcial bys wyszukac ksiazke:" << endl;
 	cout << "1. Rok wydania" << endl;
 	cout << "2. Cena" << endl;
 	cout << "3. Wydawnictwo" << endl;
 	cout << "0. Wyjescie" << endl;
+	cin >> kategoria;
 	
-rok_wydania(wsk);
+	//kategorie
+	switch(kategoria){
+		
+		case 1:
+			int liczba;
+			cout << "Podaj od jakiego roku chcesz zobaczyc ksiazki: ";
+			cin >> liczba;
+			int rok = liczba;
+			int *wsk = &rok;
+			
+	}
+	
 
 }
