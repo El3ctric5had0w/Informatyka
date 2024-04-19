@@ -2,88 +2,92 @@
 using namespace std;
 
 //struktura ksiegarni
-struct Ksiegarnia
+struct ksiegarnia
 {
     string tytul;
     string autor;
-    string rok;
+    short rok;
     string wydawnictwo;
-    string cena;
+    float cena;
 };
 
 //funkcje
 void funkcja1(int *rok){  //rok wydania
 	for( int *rok = 0; *rok < 7; *rok++ ) {
+		if(*rok >= ksiegarnia.rok)
+		cout << "Tytul: " << ksiegarnia.tytul << endl;
+		cout << "Autor: " << ksiegarnia.autor << end;
+		cout << "Rok: " << ksiegarnia.rok << end;
+		cout << "Wydawnictwo: " << ksiegarnia.wydawnictwo << endl;
+		cout << "Cena: " << ksiegarnia.cena << endl;
 		
-       
-    }
+	}
 }
-
 
 int main(){
     //dane ksiegarni
-	Ksiegarnia Tytul1 =
+	ksiegarnia Tytul1 =
     {
         "Tytul1",
         "autor1",
-        "1925",
+        1925,
         "Helion1",
-        "23.54",
+        23.54,
     };
     
-    Ksiegarnia Tytul2 =
+    ksiegarnia Tytul2 =
     {
         "Tytul",
         "autor2",
-        "1926",
+        1926,
         "Helion2",
-        "24.54",
+        24.54,
     };
    
-   Ksiegarnia Tytul3 =
+   ksiegarnia Tytul3 =
    {
    		"Tytul3",
    		"autor1",
-   		"1927",
+   		1927,
    		"Helion3",
-   		"25.54",
+   		25.54,
    };
    
    
-    Ksiegarnia Tytul4 =
+    ksiegarnia Tytul4 =
     {
     	"Tytul4",
     	"autor2",
-    	"1928",
+    	1928,
     	"Helion1",
-    	"26.54",
+    	26.54,
 	};
 	
-	Ksiegarnia Tytul5
+	ksiegarnia Tytul5
 	{
 		"Tytul5",
 		"autor1",
-		"1921"
+		1921,
 		"Helion2",
-		"27.54",
+		27.54,
 	};
 	
-	Ksiegarnia Tytul6
+	ksiegarnia Tytul6
 	{
 		"Tytul6",
 		"autor2",
-		"1930",
+		1930,
 		"Helion3",
-		"28.54",
+		28.54,
 	};
 	
-	Ksiegarnia Tytul7
+	ksiegarnia Tytul7
 	{
 		"Tytul7",
 		"autor1",
-		"1931",
+		1931,
 		"Helion1",
-		"29.54",
+		29.54,
 	};
 	
 	int kategoria;
@@ -105,6 +109,7 @@ int main(){
 			int *wsk = &rok;
 			
 	}
-	
+cin.get();
+return(0);	
 
 }
