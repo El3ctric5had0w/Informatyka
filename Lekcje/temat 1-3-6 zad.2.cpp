@@ -12,8 +12,8 @@ struct ksiegarnia
 };
 
 //funkcje
-void funkcja1(int *rok){  //rok wydania
-	for( int *rok = 0; *rok < 7; *rok++ ) {
+void funkcja1(short *rok){  //rok wydania
+	for( short *rok = 0; *rok < 7; *rok++ ) {
 		if(*rok >= ksiegarnia.rok)
 		cout << "Tytul: " << ksiegarnia.tytul << endl;
 		cout << "Autor: " << ksiegarnia.autor << end;
@@ -23,6 +23,7 @@ void funkcja1(int *rok){  //rok wydania
 		
 	}
 }
+
 
 int main(){
     //dane ksiegarni
@@ -102,12 +103,19 @@ int main(){
 	switch(kategoria){
 		
 		case 1:
-			int liczba;
+			short liczba;
 			cout << "Podaj od jakiego roku chcesz zobaczyc ksiazki: ";
 			cin >> liczba;
-			int rok = liczba;
-			int *wsk = &rok;
+			short rok = liczba;
+			short *wsk = &rok;
+			break;
 			
+		case 2:
+			float liczba;
+			cout << "Podaj od jakiej ceny chcesz zobaczyc ksiazki: ";
+			cin >> liczba;
+			float cena = liczba;
+			float *wsk = &cena;	
 	}
 cin.get();
 return(0);	
