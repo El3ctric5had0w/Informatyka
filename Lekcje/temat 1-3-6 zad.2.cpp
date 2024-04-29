@@ -24,6 +24,29 @@ void funkcja1(short *rok){  //rok wydania
 	}
 }
 
+void funkcja1(float *cena){  //cena ksiazki
+	for( short *cena = 0; *cena < 7; *cena++ ) {
+		if(*cena >= ksiegarnia.cena)
+		cout << "Tytul: " << ksiegarnia.tytul << endl;
+		cout << "Autor: " << ksiegarnia.autor << end;
+		cout << "Rok: " << ksiegarnia.rok << end;
+		cout << "Wydawnictwo: " << ksiegarnia.wydawnictwo << endl;
+		cout << "Cena: " << ksiegarnia.cena << endl;
+		
+	}
+}
+
+void funkcja1(string *wydawnictwo){  //wydawnictwo
+	for( short *wydawnictwo = 0; *wydawnictwo < 7; *cena++ ) {
+		if(*wydawnictwo == ksiegarnia.wydawnictwo)
+		cout << "Tytul: " << ksiegarnia.tytul << endl;
+		cout << "Autor: " << ksiegarnia.autor << end;
+		cout << "Rok: " << ksiegarnia.rok << end;
+		cout << "Wydawnictwo: " << ksiegarnia.wydawnictwo << endl;
+		cout << "Cena: " << ksiegarnia.cena << endl;
+		
+	}
+}
 
 int main(){
     //dane ksiegarni
@@ -111,11 +134,20 @@ int main(){
 			break;
 			
 		case 2:
-			float liczba;
+			float li;
 			cout << "Podaj od jakiej ceny chcesz zobaczyc ksiazki: ";
-			cin >> liczba;
-			float cena = liczba;
-			float *wsk = &cena;	
+			cin >> li;
+			float cena = li;
+			float *wsk = &cena;
+			break;
+		
+		case 3:
+			short licz;
+			cout << "Podaj od jakiego wydawcy chcesz zobaczyc ksiazki: ";
+			cin >> licz;
+			string wydawnictwo = licz;
+			string *wsk = &wydawnictwo;
+			break;
 	}
 cin.get();
 return(0);	
