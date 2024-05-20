@@ -10,7 +10,7 @@ int main (){
 int iStart;
 
 iStart = n;
-while( iStart = 0)
+while( iStart = 1)
 	for (int i=n; i > 1; i/k){
 		for(int j=i; j/!2; k++){
 			cout << "Czynniki pierwsze liczby " << n << ":" << k;
