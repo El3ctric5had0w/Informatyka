@@ -3,13 +3,16 @@ using namespace std;
 int main(){
 	
 	int n;
+	int k = 2;
 	cout << "Ile liczb pierwszych chcesz wyswietlic: " << endl;
 	sin >> n;
 	
-	int lp = 0
-	int p = 2
-	for (int lp=0, lp < n, lp=1){
+iStart = n;	
 	
+while(iStart == 1){
+	for (int i=0, i > 1, i++){
+		
 	}
+}
 	
 }

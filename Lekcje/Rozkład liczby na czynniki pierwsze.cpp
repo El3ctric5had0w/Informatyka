@@ -7,6 +7,7 @@ int main()
  
         cout<<"Podaj liczbe: ";
         cin>>n;
+
  
         cout<<"Czynniki pierwsze liczby "<<n<<": ";
  
@@ -28,4 +29,3 @@ int main()
  
         return 0;
 }
-	
